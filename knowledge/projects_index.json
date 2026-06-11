@@ -1,0 +1,325 @@
+{
+  "llm_lawyer": {
+    "file": "projects/llm_lawyer.json",
+
+    "priority": 10,
+
+    "domains": [
+      "Artificial Intelligence",
+      "Generative AI",
+      "NLP",
+      "RAG",
+      "Legal Tech"
+    ],
+
+    "keywords": [
+      "llm",
+      "large language model",
+      "genai",
+      "generative ai",
+      "rag",
+      "graphrag",
+      "hybrid rag",
+      "chromadb",
+      "vector database",
+      "knowledge graph",
+      "networkx",
+      "semantic search",
+      "retrieval",
+      "legal ai",
+      "legal assistant",
+      "law",
+      "lawyer",
+      "ocr",
+      "tesseract",
+      "llama",
+      "openrouter",
+      "streamlit",
+      "nlp"
+    ],
+
+    "aliases": [
+      "ai lawyer",
+      "legal chatbot",
+      "legal assistant",
+      "law assistant",
+      "lawyer project"
+    ]
+  },
+
+  "tom_resume_engine": {
+    "file": "projects/tom_resume_engine.json",
+
+    "priority": 11,
+
+    "domains": [
+      "Artificial Intelligence",
+      "LLM Applications",
+      "Automation",
+      "Career Tech"
+    ],
+
+    "keywords": [
+      "resume",
+      "resume tailoring",
+      "ats",
+      "ats optimization",
+      "job description",
+      "jd analysis",
+      "prompt engineering",
+      "llm",
+      "groq",
+      "ollama",
+      "openrouter",
+      "latex",
+      "pdf generation",
+      "career automation",
+      "scoring engine",
+      "retrieval",
+      "automation",
+      "resume builder"
+    ],
+
+    "aliases": [
+      "tom",
+      "resume engine",
+      "resume tailoring agent",
+      "resume builder",
+      "ats resume"
+    ]
+  },
+
+  "target_vision": {
+    "file": "projects/target_vision.json",
+
+    "priority": 9,
+
+    "domains": [
+      "Computer Vision",
+      "Embedded AI"
+    ],
+
+    "keywords": [
+      "computer vision",
+      "opencv",
+      "face recognition",
+      "yolov8",
+      "head detection",
+      "object detection",
+      "tracking",
+      "arduino",
+      "real time inference",
+      "image processing",
+      "identity recognition"
+    ],
+
+    "aliases": [
+      "target vision",
+      "head detection",
+      "face recognition system",
+      "aim system"
+    ]
+  },
+
+  "animal_intrusion": {
+    "file": "projects/animal_intrusion.json",
+
+    "priority": 8,
+
+    "domains": [
+      "Computer Vision",
+      "Deep Learning"
+    ],
+
+    "keywords": [
+      "computer vision",
+      "yolov8",
+      "opencv",
+      "object detection",
+      "animal detection",
+      "wildlife monitoring",
+      "cnn",
+      "deep learning",
+      "dataset preparation",
+      "model training",
+      "real time detection"
+    ],
+
+    "aliases": [
+      "animal intrusion",
+      "wildlife monitoring",
+      "animal detection system"
+    ]
+  },
+
+  "cyberbullying_detection": {
+    "file": "projects/cyberbullying_detection.json",
+
+    "priority": 7,
+
+    "domains": [
+      "Natural Language Processing",
+      "Machine Learning"
+    ],
+
+    "keywords": [
+      "nlp",
+      "text classification",
+      "sentiment analysis",
+      "nltk",
+      "naive bayes",
+      "svm",
+      "content moderation",
+      "machine learning",
+      "cyberbullying",
+      "text processing"
+    ],
+
+    "aliases": [
+      "cyberbullying detection",
+      "content moderation project",
+      "nlp classifier"
+    ]
+  },
+
+  "n8n_automation": {
+    "file": "projects/n8n_automation.json",
+
+    "priority": 8,
+
+    "domains": [
+      "Automation",
+      "AI Workflows"
+    ],
+
+    "keywords": [
+      "automation",
+      "n8n",
+      "workflow automation",
+      "api integration",
+      "orchestration",
+      "ollama",
+      "openai api",
+      "gemini api",
+      "meta api",
+      "workflow"
+    ],
+
+    "aliases": [
+      "n8n",
+      "automation workflows",
+      "workflow automation"
+    ]
+  },
+
+  "onesec_app": {
+    "file": "projects/onesec_app.json",
+
+    "priority": 8,
+
+    "domains": [
+      "Android Development",
+      "Mobile Applications"
+    ],
+
+    "keywords": [
+      "android",
+      "android studio",
+      "java",
+      "usage access api",
+      "overlay permissions",
+      "habit breaker",
+      "digital wellbeing",
+      "productivity app",
+      "mobile development"
+    ],
+
+    "aliases": [
+      "onesec",
+      "habit breaker app",
+      "productivity app"
+    ]
+  },
+
+  "uni_feedback": {
+    "file": "projects/uni_feedback.json",
+
+    "priority": 6,
+
+    "domains": [
+      "Web Development",
+      "Full Stack Development"
+    ],
+
+    "keywords": [
+      "php",
+      "mysql",
+      "javascript",
+      "html",
+      "css",
+      "authentication",
+      "dashboard",
+      "feedback system",
+      "web development",
+      "full stack"
+    ],
+
+    "aliases": [
+      "unifeedback",
+      "feedback platform",
+      "feedback system"
+    ]
+  },
+
+  "movie_recommendation": {
+    "file": "projects/movie_recommendation.json",
+
+    "priority": 5,
+
+    "domains": [
+      "Android Development"
+    ],
+
+    "keywords": [
+      "android",
+      "tmdb api",
+      "rest api",
+      "recommendation system",
+      "java",
+      "mobile application"
+    ],
+
+    "aliases": [
+      "movie recommendation",
+      "movie app",
+      "tmdb app"
+    ]
+  },
+
+  "baby_monitor": {
+    "file": "projects/baby_monitor.json",
+
+    "priority": 4,
+
+    "domains": [
+      "IoT",
+      "Embedded Systems"
+    ],
+
+    "keywords": [
+      "arduino",
+      "iot",
+      "embedded systems",
+      "pir sensor",
+      "sound sensor",
+      "hardware integration",
+      "monitoring system"
+    ],
+
+    "aliases": [
+      "baby monitor",
+      "iot monitoring",
+      "arduino project"
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "id": "onesec_app",
+    "title": "OneSec Habit Breaker App",
+    "timeline": "2025",
+    "priority": 8,
+    "status": "Completed",
+    "domains": [
+      "android",
+      "mobile-development"
+    ],
+    "keywords": [
+      "android",
+      "android studio",
+      "java",
+      "mobile application",
+      "usage access api",
+      "overlay permissions",
+      "digital wellbeing",
+      "habit tracker",
+      "productivity app"
+    ],
+    "technologies": [
+      "Java",
+      "Android Studio",
+      "Usage Access APIs",
+      "Overlay Permissions"
+    ]
+  },
+  
+"overview": {
+"one_line": "Built an Android habit-breaking application that interrupts unconscious app usage and encourages mindful digital behavior through behavioral intervention techniques.",
+
+
+"summary": "OneSec Habit Breaker is an Android application designed to reduce impulsive usage of addictive social media applications such as Instagram, YouTube, Facebook, and Twitter. Instead of blocking apps entirely, the system introduces a deliberate pause between the user's action and app launch, encouraging conscious decision-making. The application monitors selected apps, intercepts launch events, presents a mindfulness screen, and allows users to either continue or cancel the action. The project combines Android development, behavioral design principles, system-level monitoring, and AI-powered usage insights.",
+
+"elevator_pitch": "A digital wellbeing application that helps users break the habit of unconsciously opening social media apps by introducing a short mindfulness interruption before app launch."
+
+
+},
+
+"problem": {
+"statement": "Many users open social media applications unconsciously and spend significant amounts of time scrolling without intention. This habitual behavior reduces productivity and contributes to digital distraction.",
+
+"why_it_matters": "Most people do not intentionally spend hours on social media. The problem often starts with an unconscious app launch that gradually turns into extended usage sessions.",
+
+"target_users": [
+  "Students",
+  "Professionals",
+  "Social media users",
+  "People seeking digital wellbeing",
+  "Productivity-focused individuals"
+]
+
+
+},
+
+"motivation": {
+"why_i_built_it": "I built OneSec primarily for myself after noticing how often I would automatically open social media apps without consciously deciding to do so. I wanted a solution that interrupted the habit loop rather than completely blocking access.",
+
+"personal_interest": "The project allowed me to combine Android development with behavioral psychology concepts and build a tool that directly solved a problem I personally experienced.",
+
+"project_goals": [
+  "Reduce impulsive social media usage",
+  "Promote mindful technology usage",
+  "Interrupt automatic habit loops",
+  "Provide digital wellbeing insights",
+  "Build a practical Android application"
+]
+
+
+},
+
+"architecture": {
+"v1": "The first version monitored selected applications and displayed a confirmation screen whenever users attempted to open those apps.",
+
+"v2": "The application was redesigned with improved UI, enhanced analytics, usage monitoring, and AI-assisted habit insights generated from user interaction data.",
+
+"current": "Users select apps they consider distracting. The system listens for application launch events and intercepts launches of selected apps. Instead of continuously monitoring the screen, the app relies on Android system events to wake only when required, reducing battery consumption. When a monitored app is launched, a mindfulness screen appears asking whether the user intentionally wants to continue. Users can either proceed to the application or return without opening it. Usage statistics and behavioral patterns are recorded and analyzed to generate personalized insights.",
+
+"future": "Future versions may include cloud synchronization, user accounts, advanced analytics, personalized habit coaching, cross-device tracking, and Play Store deployment."
+
+
+},
+
+"implementation_journey": {
+"initial_approach": "The project began as a simple Android application that intercepted selected app launches and displayed a confirmation screen before allowing access.",
+
+"major_milestones": [
+  "Built initial app launch interception workflow.",
+  "Implemented user-selected app monitoring.",
+  "Designed mindfulness interruption screens.",
+  "Optimized battery consumption through event-driven architecture.",
+  "Added usage analytics and monitoring.",
+  "Redesigned the UI in a second-generation version.",
+  "Integrated AI-powered motivational insights."
+],
+
+"key_decisions": [
+  "Focus on habit interruption instead of app blocking.",
+  "Use event-driven monitoring instead of continuous background polling.",
+  "Provide user choice rather than forced restrictions.",
+  "Incorporate behavioral feedback and analytics."
+],
+
+"architecture_changes": [
+  "Basic Confirmation Screen → Behavioral Intervention System",
+  "Manual Monitoring → Event-Driven Architecture",
+  "Static Experience → AI-Assisted Insights",
+  "Simple Utility App → Digital Wellbeing Platform"
+]
+
+
+},
+
+"challenges": [
+{
+"challenge": "Preventing excessive battery consumption.",
+"solution": "Implemented an event-driven architecture that wakes the application only when monitored apps are launched.",
+"lesson": "Efficient system integration is often more important than adding new features."
+},
+
+{
+  "challenge": "Balancing user freedom and habit control.",
+  "solution": "Designed a mindfulness interruption instead of forcing users to block applications.",
+  "lesson": "Behavioral design is more effective when users retain control."
+},
+
+{
+  "challenge": "Creating meaningful usage insights.",
+  "solution": "Tracked interaction patterns and integrated AI-generated motivational feedback.",
+  "lesson": "Personalized feedback increases user engagement."
+}
+
+
+],
+
+"results": {
+"current_status": "Functional Android application available through source code and local installation workflows.",
+
+
+"completed_features": [
+  "App launch interception",
+  "Mindfulness intervention screens",
+  "User-selected app monitoring",
+  "Usage analytics",
+  "Digital wellbeing tracking",
+  "AI-generated motivational insights",
+  "Modernized second-generation UI"
+],
+
+"technical_outcomes": [
+  "Successfully implemented event-driven monitoring architecture.",
+  "Reduced battery usage compared to continuous background monitoring approaches.",
+  "Created a practical digital wellbeing solution for real-world use.",
+  "Integrated Android development, behavioral design, and AI-powered feedback."
+],
+
+"project_highlights": [
+  "Built to solve a personal problem.",
+  "Focuses on behavior change instead of restriction.",
+  "Combines Android development and digital wellbeing concepts.",
+  "Introduced AI-generated usage insights."
+]
+
+
+},
+
+"lessons_learned": [
+"Technology can be designed to encourage healthier habits.",
+"Behavioral interventions can be more effective than strict restrictions.",
+"Battery optimization is critical for Android background services.",
+"Event-driven architectures are often more efficient than continuous monitoring.",
+"The best projects often emerge from solving personal problems."
+],
+
+"future_improvements": [
+"Play Store deployment.",
+"User authentication and cloud synchronization.",
+"Cross-device habit tracking.",
+"Advanced AI coaching features.",
+"Personalized intervention strategies.",
+"Community-based accountability features.",
+"Enhanced analytics and progress visualization."
+],
+
+"links": {
+"github": "",
+"demo": "",
+"linkedin_post": ""
+},
+
+"architecture_decisions": [
+{
+"decision": "Used habit interruption instead of app blocking.",
+"reason": "Encourages conscious usage rather than enforcing restrictions."
+},
+{
+"decision": "Implemented event-driven monitoring.",
+"reason": "Reduced battery consumption compared to continuous background monitoring."
+},
+{
+"decision": "Added AI-generated insights.",
+"reason": "Provided personalized motivation based on user behavior."
+}
+]
+}

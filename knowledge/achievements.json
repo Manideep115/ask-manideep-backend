@@ -1,0 +1,67 @@
+[
+  {
+    "title": "Grandmaster Top 1",
+
+    "organization": "CSI VIT-AP",
+
+    "year": 2024,
+
+    "priority": 9,
+
+    "category": "Programming",
+
+    "description": "Ranked 1st in the 100 Days of Coding Challenge Phase 1 focused on Java programming.",
+
+    "tags": [
+      "java",
+      "programming",
+      "coding challenge",
+      "competitive programming",
+      "problem solving"
+    ]
+  },
+
+  {
+    "title": "OOPS Maverick Title",
+
+    "organization": "CSI VIT-AP",
+
+    "year": 2024,
+
+    "priority": 8,
+
+    "category": "Programming",
+
+    "description": "Recognized for outstanding consistency and performance during Phase 2 of the 100 Days Coding Challenge.",
+
+    "tags": [
+      "oops",
+      "java",
+      "programming",
+      "coding challenge",
+      "software engineering"
+    ]
+  },
+
+  {
+    "title": "Global Jury Certificate",
+
+    "organization": "Wadhwani Foundation",
+
+    "year": 2025,
+
+    "priority": 8,
+
+    "category": "Entrepreneurship",
+
+    "description": "Recognized for the Park Smarter venture concept, business development efforts, and pitch execution.",
+
+    "tags": [
+      "entrepreneurship",
+      "startup",
+      "innovation",
+      "business pitch",
+      "park smarter"
+    ]
+  }
+]

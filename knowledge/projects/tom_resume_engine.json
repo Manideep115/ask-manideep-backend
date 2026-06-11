@@ -1,0 +1,248 @@
+{
+  "metadata": {
+    "id": "tom_resume_engine",
+    "title": "TOM Resume Engine: AI-Powered Resume Tailoring System",
+    "timeline": "2026",
+    "priority": 11,
+    "status": "Completed",
+    "domains": [
+      "ai",
+      "llm",
+      "automation",
+      "career-tech"
+    ],
+    "keywords": [
+      "resume tailoring",
+      "ats optimization",
+      "job description analysis",
+      "prompt engineering",
+      "llm orchestration",
+      "project ranking",
+      "resume generation",
+      "latex",
+      "pdflatex",
+      "streamlit",
+      "ollama",
+      "groq",
+      "openrouter",
+      "context isolation",
+      "career automation",
+      "retrieval",
+      "scoring engine",
+      "automation"
+    ],
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "Ollama",
+      "Groq API",
+      "OpenRouter",
+      "LaTeX",
+      "PDFLaTeX",
+      "Pandas",
+      "Regex",
+      "JSON"
+    ]
+  },
+  
+"overview": {
+"one_line": "Architected an AI-powered resume tailoring engine that converts Job Descriptions into ATS-friendly resumes using context retrieved from a structured Master_Profile.json knowledge base.",
+
+"summary": "TOM Resume Engine is an AI-powered resume tailoring platform designed to automate the repetitive process of customizing resumes for different job applications. The system analyzes a Job Description, identifies relevant skills, technologies, projects, certifications, and achievements from a structured Master_Profile.json knowledge base, and generates a tailored ATS-friendly resume. The platform combines custom scoring algorithms, retrieval engineering, LLM-assisted content generation, LaTeX-based document rendering, and automated PDF compilation to create application-ready resumes with minimal user effort.",
+
+"elevator_pitch": "TOM Resume Engine transforms a Job Description into a tailored ATS-friendly resume and cover letter using a structured knowledge base, custom project-ranking algorithms, and LLM-powered content generation. Instead of manually editing resumes for every application, users can generate upload-ready PDFs in minutes."
+
+
+},
+
+"problem": {
+"statement": "Job seekers often spend significant time manually tailoring resumes for different roles. Managing multiple projects, certifications, achievements, and skills across different domains becomes difficult, especially when applying to diverse roles such as AI, Web Development, Android Development, or Automation.",
+
+"why_it_matters": "Most candidates either maintain multiple resume versions or repeatedly edit the same resume for every application. Existing AI solutions typically require extensive prompting, manual editing, and external tools for formatting and PDF generation, making the process inefficient.",
+
+"target_users": [
+  "Students applying for internships and placements",
+  "Job seekers applying to multiple roles",
+  "Career switchers targeting different domains",
+  "Professionals maintaining multiple resume variants"
+]
+
+
+},
+
+"motivation": {
+"why_i_built_it": "I built TOM Resume Engine during placement season after repeatedly spending hours tailoring resumes instead of preparing for interviews. I wanted a system where I could simply paste a Job Description and receive an upload-ready resume without manual editing.",
+
+"personal_interest": "The project allowed me to combine retrieval engineering, LLM orchestration, scoring systems, automation, and document generation into a practical tool that solved a problem I personally faced.",
+
+"project_goals": [
+  "Automate resume tailoring",
+  "Reduce time spent modifying resumes",
+  "Improve ATS optimization",
+  "Create application-ready PDFs automatically",
+  "Eliminate repetitive prompting workflows",
+  "Build a scalable resume intelligence platform"
+]
+
+
+},
+
+"architecture": {
+"v1": "The first version used a Master_Profile.json knowledge base and a direct LLM call. The complete profile and Job Description were supplied to the model, which generated a resume without retrieval optimization or advanced ranking.",
+
+"v2": "A custom scoring engine was introduced to analyze Job Descriptions and rank projects, skills, certifications, and achievements based on keyword matching, domain relevance, project priority, aliases, and recency scores. Only highly relevant profile sections were forwarded to the LLM.",
+
+"current": "The current architecture begins with Job Description analysis and keyword extraction. The scoring engine evaluates projects, skills, certifications, and achievements from Master_Profile.json using domain matching, keyword similarity, aliases, priority scores, and recency-aware ranking. The highest-scoring profile sections are selected and combined with carefully designed prompts before being sent to an LLM. The model generates LaTeX output which is compiled through PDFLaTeX to produce ATS-friendly resumes and cover letters. Users can review and edit generated LaTeX before downloading final PDFs.",
+
+"future": "Future versions will introduce user authentication, cloud-hosted profile storage, resume history management, multi-user support, SaaS deployment, collaborative profile editing, and organization-wide resume management."
+
+
+},
+
+"implementation_journey": {
+"initial_approach": "The project began as a simple experiment where the entire Master_Profile.json and Job Description were sent directly to an LLM for resume generation.",
+
+"major_milestones": [
+  "Designed Master_Profile.json knowledge base structure.",
+  "Implemented initial resume generation workflow.",
+  "Built custom Job Description analysis engine.",
+  "Created project ranking and scoring algorithms.",
+  "Added recency-aware and domain-aware retrieval.",
+  "Integrated LaTeX resume generation.",
+  "Implemented PDFLaTeX compilation.",
+  "Added cover letter generation.",
+  "Designed premium Streamlit interface.",
+  "Added editable LaTeX workflow before PDF export."
+],
+
+"key_decisions": [
+  "Use structured JSON instead of raw resume text.",
+  "Build a custom scoring engine instead of LLM-based retrieval.",
+  "Generate LaTeX rather than plain-text resumes.",
+  "Compile PDFs automatically within the platform.",
+  "Retrieve only relevant profile sections instead of entire knowledge base.",
+  "Keep AI focused on content generation rather than ranking."
+],
+
+"architecture_changes": [
+  "Direct LLM Prompting → Retrieval-Based Resume Generation",
+  "Full Profile Context → Selective Context Retrieval",
+  "Plain Resume Output → LaTeX Generation",
+  "Manual Formatting → Automated PDF Compilation",
+  "Generic Resume Generation → ATS-Oriented Resume Tailoring"
+]
+
+
+},
+
+"challenges": [
+{
+"challenge": "Building a structured profile knowledge base",
+"solution": "Created Master_Profile.json containing projects, certifications, achievements, skills, links, and metadata.",
+"lesson": "Structured data enables significantly better retrieval than unstructured resume text."
+},
+
+{
+  "challenge": "Ranking projects accurately for different Job Descriptions",
+  "solution": "Implemented a scoring engine using keywords, aliases, priorities, recency scores, and domain matching.",
+  "lesson": "Retrieval quality is often more important than prompt quality."
+},
+
+{
+  "challenge": "Generating professionally formatted resumes",
+  "solution": "Switched from generic output generation to LaTeX-based document generation and PDFLaTeX compilation.",
+  "lesson": "Presentation quality matters as much as content quality."
+},
+
+{
+  "challenge": "Reducing unnecessary API usage",
+  "solution": "Designed a deterministic scoring engine instead of using an LLM for retrieval decisions.",
+  "lesson": "Not every problem requires another LLM call."
+}
+
+
+],
+
+"results": {
+"current_status": "Functional and actively used locally. Source code is available through GitHub but the platform is not publicly deployed.",
+
+
+"completed_features": [
+  "Job Description analysis",
+  "Custom project ranking engine",
+  "Skill and certification retrieval",
+  "ATS-friendly resume generation",
+  "Automated LaTeX generation",
+  "PDFLaTeX compilation",
+  "Editable LaTeX workflow",
+  "Cover letter generation",
+  "Knowledge-base-driven profile management"
+],
+
+"technical_outcomes": [
+  "Reduced manual resume tailoring effort significantly.",
+  "Implemented retrieval-driven resume generation.",
+  "Built custom ranking algorithms without LLM routing.",
+  "Successfully generated upload-ready ATS-friendly PDFs."
+],
+
+"project_highlights": [
+  "Solves a real problem faced during placement preparation.",
+  "Uses a custom retrieval and scoring engine.",
+  "Generates both resumes and cover letters.",
+  "Designed to scale into a SaaS platform."
+]
+
+
+},
+
+"lessons_learned": [
+"Structured knowledge bases outperform raw document prompting.",
+"Deterministic retrieval can outperform LLM-based routing for specific tasks.",
+"Good ranking systems significantly improve generation quality.",
+"Automating document formatting saves substantial user effort.",
+"Practical AI products often require more engineering than prompting."
+],
+
+"future_improvements": [
+"User authentication and profile management.",
+"Cloud-hosted Master_Profile storage.",
+"Resume generation history.",
+"Multi-user SaaS deployment.",
+"Organization-specific resume templates.",
+"Advanced ATS scoring and feedback.",
+"Collaborative profile editing.",
+"Resume analytics and optimization recommendations."
+],
+
+"links": {
+"github": "",
+"demo": "",
+"linkedin_post": ""
+},
+
+"architecture_decisions": [
+{
+"decision": "Built a custom scoring engine instead of LLM-based retrieval.",
+"reason": "Reduced API usage while maintaining highly relevant project selection."
+},
+
+
+{
+  "decision": "Used structured JSON as the source of truth.",
+  "reason": "Enabled scalable retrieval and profile management."
+},
+
+{
+  "decision": "Generated LaTeX instead of plain text resumes.",
+  "reason": "Provided professional formatting and automated PDF generation."
+},
+
+{
+  "decision": "Did not prioritize complex frontend development.",
+  "reason": "Focused engineering effort on retrieval, ranking, and generation quality."
+}
+
+
+]
+}

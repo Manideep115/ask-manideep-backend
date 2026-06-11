@@ -1,0 +1,231 @@
+{
+  "metadata": {
+    "id": "llm_lawyer",
+    "title": "LLM LAWYER: Hybrid GraphRAG Legal Assistant",
+    "timeline": "2026",
+    "priority": 10,
+    "status": "Completed",
+    "domains": [
+      "ai",
+      "llm",
+      "nlp",
+      "rag",
+      "legal-tech"
+    ],
+    "keywords": [
+      "graphrag",
+      "retrieval augmented generation",
+      "rag",
+      "chromadb",
+      "vector database",
+      "knowledge graph",
+      "networkx",
+      "semantic search",
+      "ocr",
+      "tesseract",
+      "llama",
+      "legal ai"
+    ],
+    "technologies": [
+      "Python",
+      "Streamlit",
+      "ChromaDB",
+      "NetworkX",
+      "OpenRouter API",
+      "Tesseract OCR",
+      "Plotly"
+    ]
+  },
+  "overview": {
+  "one_line": "Architected a Hybrid GraphRAG system combining ChromaDB vector search and NetworkX multi-hop reasoning across Indian criminal laws (BNS, BNSS, BSA).",
+
+  "summary": "LLM Lawyer is a legal AI assistant built to help users understand Indian criminal laws using Retrieval-Augmented Generation (RAG) and GraphRAG techniques. The project evolved from a simple CSV-based legal retrieval system into a production-style legal reasoning platform powered by official BNS, BNSS, and BSA legal documents. The system combines vector retrieval, graph-based relationship exploration, OCR-powered document analysis, re-ranking, and LLM reasoning to deliver context-aware legal responses. It also supports FIR analysis through OCR pipelines and is deployed online through Streamlit.",
+
+  "elevator_pitch": "LLM Lawyer is a Hybrid GraphRAG legal assistant that helps users understand Indian criminal laws by combining vector search, graph-based legal reasoning, OCR-powered document analysis, and LLM-generated responses. Unlike traditional RAG systems, it connects related legal concepts across BNS, BNSS, and BSA to improve retrieval relevance and reduce hallucinations."
+  },
+
+  "problem": {
+  "statement": "Legal information is often difficult for ordinary citizens to access and understand. Existing legal resources require users to manually navigate hundreds of sections, acts, and procedural documents, making legal research time-consuming and intimidating for non-legal users.",
+
+  "why_it_matters": "Many legal questions do not require immediate consultation with a lawyer, but users still struggle to find reliable legal information. A retrieval-based legal assistant can improve accessibility while reducing misinformation and improving public understanding of legal procedures.",
+
+  "target_users": [
+  "Citizens seeking basic legal guidance",
+  "Students learning Indian criminal law",
+  "Researchers exploring legal AI systems",
+  "Users analyzing FIR and legal documents"
+  ]
+  },
+
+  "motivation": {
+  "why_i_built_it": "I built LLM Lawyer as my first major Generative AI and RAG project while transitioning from Computer Vision into LLM-based systems. I wanted to deeply understand how Retrieval-Augmented Generation works and explore how AI could be applied to a real-world domain with meaningful impact.",
+
+  "personal_interest": "The project started from curiosity about emerging RAG architectures and evolved into a long-term exploration of retrieval quality, chunking strategies, graph-based reasoning, and legal knowledge systems. It became one of my most technically challenging projects and served as a bridge between my NLP background and modern Generative AI engineering.",
+
+  "project_goals": [
+  "Learn and implement Retrieval-Augmented Generation from scratch",
+  "Improve legal information accessibility",
+  "Experiment with multiple chunking and retrieval strategies",
+  "Explore GraphRAG for multi-hop legal reasoning",
+  "Build an end-to-end deployed legal AI application",
+  "Create a scalable foundation for future legal knowledge systems"
+  ]
+  },
+  "architecture": {
+    "v1": "The first version used a Kaggle CSV dataset containing IPC sections. Data was embedded into a local ChromaDB vector store and retrieved through a simple RAG pipeline. User queries were entered through a terminal interface and answered using locally hosted LLMs.",
+
+    "v2": "The project migrated from CSV datasets to official IPC and CRPC government PDFs. Multiple chunking strategies were evaluated, including fixed-size chunking, section-wise chunking, and page-based chunking. Section-level parsing improved retrieval quality but still struggled with legal context relevance.",
+
+    "current": "The current architecture is a Hybrid GraphRAG system built on BNS, BNSS, and BSA legal corpora. Official legal PDFs are parsed into structured JSON containing section numbers, section titles, content, summaries, and metadata. ChromaDB performs vector retrieval, retrieved sections are re-ranked, and relevant nodes are expanded through a NetworkX legal knowledge graph containing 1000+ nodes and 1800+ edges. Context from both vector retrieval and graph expansion is merged and supplied to a single LLM call for legal reasoning and answer generation. OCR-based document analysis is supported through pdfplumber and Tesseract fallback pipelines.",
+
+    "future": "Future architecture will expand beyond criminal law into civil law and human rights regulations. Planned upgrades include user authentication, persistent conversation history, cloud-hosted infrastructure, multi-user support, automated graph expansion, and broader legal knowledge coverage."
+    },
+  "implementation_journey": {
+  "initial_approach": "The project began as an experiment to understand Retrieval-Augmented Generation while transitioning from Computer Vision into Generative AI. The first implementation used Kaggle CSV datasets containing IPC sections, ChromaDB vector embeddings, and locally hosted LLMs.",
+
+  "major_milestones": [
+  "Built first RAG prototype using IPC CSV datasets and local LLMs.",
+  "Migrated from CSV datasets to official IPC and CRPC government PDFs.",
+  "Developed custom legal document parsing pipelines.",
+  "Experimented with fixed-size, section-wise, and page-level chunking strategies.",
+  "Migrated legal corpus from IPC/CRPC to BNS/BNSS/BSA.",
+  "Automated summary generation for 1000+ legal sections using LLM-assisted preprocessing.",
+  "Built structured JSON legal knowledge base.",
+  "Implemented re-ranking pipeline for retrieval improvement.",
+  "Constructed legal knowledge graph with 1000+ nodes and 1800+ edges.",
+  "Migrated from traditional RAG to Hybrid GraphRAG architecture.",
+  "Integrated OCR-based FIR analysis.",
+  "Deployed the complete application using Streamlit and GitHub."
+  ],
+
+  "key_decisions": [
+  "Use official government legal PDFs instead of community datasets.",
+  "Store legal sections as structured JSON instead of raw chunks.",
+  "Generate section summaries during preprocessing rather than at query time.",
+  "Adopt GraphRAG after observing limitations of traditional vector retrieval.",
+  "Use a single LLM call for both intent classification and answer generation to reduce API usage.",
+  "Implement OCR support to allow user-uploaded legal documents and FIR analysis."
+  ],
+
+  "architecture_changes": [
+  "CSV Dataset → Official Government PDFs",
+  "Fixed Chunking → Section-Based Parsing",
+  "IPC/CRPC → BNS/BNSS/BSA",
+  "Raw Content → Structured Legal JSON",
+  "Traditional RAG → Hybrid GraphRAG",
+  "Local-Only Processing → API-Assisted Inference",
+  "Question Answering → Question Answering + Document Analysis"
+  ]
+  },
+  "challenges": [
+{
+"challenge": "Legal document preprocessing and corpus construction",
+"solution": "Built custom parsing pipelines that extracted section numbers, section titles, content, summaries, and metadata from official legal PDFs and converted them into structured JSON records.",
+"lesson": "Building the knowledge base often requires more effort than integrating the LLM."
+},
+
+{
+"challenge": "Finding an effective chunking strategy",
+"solution": "Evaluated fixed-size chunking, section-level chunking, and page-based chunking before settling on structured section-oriented legal chunks.",
+"lesson": "Chunking strategy has a direct impact on retrieval quality and overall RAG performance."
+},
+
+{
+"challenge": "Low retrieval relevance using traditional RAG",
+"solution": "Implemented GraphRAG to connect related legal concepts across BNS, BNSS, and BSA using graph relationships.",
+"lesson": "Vector similarity alone is insufficient for domains that require multi-hop reasoning."
+},
+
+{
+"challenge": "Generating summaries for over 1000 legal sections",
+"solution": "Automated summary generation using LLM-assisted preprocessing pipelines instead of manual curation.",
+"lesson": "Automation becomes essential when scaling knowledge systems."
+},
+
+{
+"challenge": "Processing uploaded legal documents and FIRs",
+"solution": "Implemented a dual-path extraction pipeline using pdfplumber for digital PDFs and Tesseract OCR for scanned documents.",
+"lesson": "Real-world systems must handle inconsistent document formats."
+},
+
+{
+"challenge": "Evaluating newer retrieval architectures",
+"solution": "Researched page-indexing approaches but intentionally retained GraphRAG after evaluating scalability, document structure requirements, and multi-document legal reasoning needs.",
+"lesson": "Popular architectures should be adopted only when they fit the problem being solved."
+}
+],
+
+"architecture_decisions": [
+{
+"decision": "Migrated from community datasets to official government legal documents",
+"reason": "Improved legal coverage, accuracy, and long-term maintainability."
+},
+
+{
+"decision": "Migrated from traditional RAG to GraphRAG",
+"reason": "Legal queries frequently require reasoning across related laws, punishments, procedures, and evidence rules."
+},
+
+{
+"decision": "Generated summaries during preprocessing",
+"reason": "Reduced retrieval overhead and improved context quality during inference."
+},
+
+{
+"decision": "Used a single LLM call for intent classification and answer generation",
+"reason": "Reduced API consumption while preserving flexible query handling."
+},
+
+{
+"decision": "Did not adopt page-indexing retrieval architecture",
+"reason": "The project required reasoning across multiple legal corpora and unstructured legal PDFs, where Hybrid GraphRAG provided better control and scalability."
+}
+],
+  "completed_features": [
+  "Architected a Hybrid GraphRAG system combining ChromaDB vector search and NetworkX multi-hop reasoning across Indian criminal laws (BNS, BNSS, BSA).",
+  "Engineered a dual-fallback OCR pipeline (pdfplumber + Tesseract) and a zero-hallucination Llama 3.1 pipeline with interactive Plotly case visualizations.",
+  "Built custom legal PDF parsing pipelines for BNS, BNSS, and BSA documents.",
+  "Generated automated section summaries and structured legal metadata using LLM-assisted preprocessing.",
+  "Implemented graph-based legal relationship exploration across multiple legal acts.",
+  "Integrated document upload and FIR analysis capabilities.",
+  "Deployed the complete application online using Streamlit and GitHub."
+  ],
+
+  "technical_outcomes": [
+  "Processed over 1000+ legal sections across multiple legal acts.",
+  "Constructed a legal knowledge graph containing 1000+ nodes and 1800+ edges.",
+  "Improved retrieval relevance through GraphRAG-based contextual expansion.",
+  "Evaluated and iterated through multiple chunking and retrieval strategies."
+  ],
+
+  "project_highlights": [
+  "First major Generative AI project.",
+  "Designed and implemented as a solo project.",
+  "Successfully transitioned from traditional RAG to GraphRAG architecture.",
+  "Supports both legal question answering and legal document analysis."
+  ]
+  ,
+  "lessons_learned": [
+    "Retrieval quality is often more important than model size.",
+    "Chunking strategy has a major impact on RAG performance.",
+    "Legal documents require domain-specific preprocessing rather than generic chunking approaches.",
+    "Graph relationships can significantly improve retrieval relevance for interconnected knowledge domains.",
+    "Building a strong knowledge base is often harder than integrating an LLM.",
+    "State-of-the-art architectures should be evaluated against project requirements rather than adopted blindly.",
+    "Scalable AI systems require equal attention to data engineering, retrieval engineering, and model orchestration."
+    ],
+  "future_improvements": [
+    "Expand coverage beyond criminal law into civil law and human rights regulations.",
+    "Add user authentication and personalized accounts.",
+    "Implement persistent conversation history and saved legal sessions.",
+    "Support cloud-based scaling and multi-user deployment.",
+    "Improve graph construction through automated relationship extraction.",
+    "Evaluate emerging retrieval architectures such as page-indexing approaches when they mature for multi-document legal systems.",
+    "Introduce advanced legal citation generation and explainability features."
+    ],
+  "links": {
+    "github": "",
+    "demo": "",
+    "linkedin_post": ""
+  }
+}

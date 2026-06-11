@@ -1,0 +1,228 @@
+{
+  "metadata": {
+    "id": "target_vision",
+    "title": "Target Vision: Face Recognition & Head-Aim System",
+    "timeline": "2025",
+    "priority": 9,
+    "status": "Completed",
+    "domains": [
+      "ai",
+      "computer-vision",
+      "embedded-ai"
+    ],
+    "keywords": [
+      "computer vision",
+      "opencv",
+      "yolov8",
+      "object detection",
+      "face recognition",
+      "tracking",
+      "real time inference",
+      "arduino",
+      "image processing"
+    ],
+    "technologies": [
+      "Python",
+      "OpenCV",
+      "face_recognition",
+      "YOLOv8",
+      "Arduino"
+    ]
+  },
+  
+"overview": {
+"one_line": "Built a real-time AI-powered target tracking system combining YOLOv8 head detection, face recognition, Arduino-based actuation, and multi-threaded computer vision pipelines.",
+
+
+"summary": "Target Vision is a computer vision system designed to detect, identify, and track individuals in real time using a combination of YOLOv8 head detection, face recognition, and hardware-based pan-tilt actuation. The project explores how AI can assist in security, surveillance, access control, and autonomous monitoring scenarios by combining object detection, identity verification, target tracking, and embedded systems integration. The system was implemented as a functional prototype using Python, OpenCV, YOLOv8, Arduino, servo motors, and face recognition libraries.",
+
+"elevator_pitch": "Target Vision is a real-time AI tracking system that detects heads using YOLOv8, verifies identities through face recognition, and automatically tracks authorized or designated individuals using Arduino-controlled pan-tilt hardware."
+
+
+},
+
+"problem": {
+"statement": "Monitoring large environments and identifying specific individuals is often labor-intensive and requires continuous human attention. Security systems frequently rely on human operators to detect, identify, and respond to events in real time.",
+
+
+"why_it_matters": "Automated vision systems can improve situational awareness, reduce manual monitoring effort, and enable intelligent tracking in surveillance, security, access-control, and robotics applications.",
+
+"target_users": [
+  "Security and surveillance systems",
+  "Research and defense technology demonstrations",
+  "Robotics and autonomous systems developers",
+  "Computer vision researchers",
+  "Access-control and facility monitoring systems"
+]
+
+
+},
+
+"motivation": {
+"why_i_built_it": "I built Target Vision to explore the combination of Computer Vision, Face Recognition, Object Detection, Embedded Systems, and Real-Time AI. The idea originated while studying how autonomous systems could assist in identifying and tracking specific individuals without requiring continuous human intervention.",
+
+
+"personal_interest": "The project allowed me to combine my experience in Computer Vision, object detection, embedded systems, and AI-driven automation into a single end-to-end prototype involving both software and hardware.",
+
+"project_goals": [
+  "Build a real-time target tracking system",
+  "Combine object detection and face recognition",
+  "Integrate AI models with physical hardware",
+  "Optimize latency for real-time performance",
+  "Explore autonomous surveillance applications",
+  "Develop a complete AI-to-hardware pipeline"
+]
+
+
+},
+
+"architecture": {
+"v1": "The initial implementation evaluated both MediaPipe and YOLO-based approaches for head detection. MediaPipe delivered good performance on webcams and controlled environments but showed limitations when considering larger-scale real-world scenarios.",
+
+"v2": "The system evolved into a YOLOv8-based architecture trained on a custom head-detection dataset annotated using Roboflow. Face recognition modules were integrated to perform identity verification after head detection.",
+
+"current": "The current architecture captures live video streams, preprocesses frames, and performs head detection using a fine-tuned YOLOv8 model. Detected head regions are passed to a face recognition pipeline for identity verification. Once an individual is verified, the system tracks the target using bounding-box coordinates and calculates positional offsets relative to the camera center. Servo control commands are generated and transmitted to an Arduino through serial communication, enabling real-time pan-tilt tracking. Multi-threading is used to separate detection, recognition, and hardware control tasks to reduce latency and maintain real-time performance.",
+
+"future": "Future versions will incorporate larger datasets, drone and aerial imagery, advanced tracking algorithms, model quantization, edge deployment, improved latency optimization, and deployment on autonomous robotic platforms."
+
+
+},
+
+"implementation_journey": {
+"initial_approach": "The project started as an experiment to combine computer vision and automation using head detection and face recognition. Early prototypes compared MediaPipe and YOLO-based detection approaches.",
+
+"major_milestones": [
+  "Collected and annotated custom head-detection dataset using Roboflow.",
+  "Trained and evaluated YOLOv8 head detection models.",
+  "Built face recognition pipeline for identity verification.",
+  "Integrated YOLO detections with face recognition.",
+  "Implemented target tracking logic.",
+  "Developed Arduino pan-tilt hardware system.",
+  "Created pixel-to-angle conversion algorithms.",
+  "Implemented serial communication between Python and Arduino.",
+  "Introduced multi-threaded execution to improve responsiveness.",
+  "Built real-time demonstration prototype."
+],
+
+"key_decisions": [
+  "Use YOLOv8 instead of MediaPipe for scalability and real-world deployment scenarios.",
+  "Separate head detection from face recognition for improved performance.",
+  "Use periodic face verification instead of continuous recognition.",
+  "Implement multi-threading to reduce latency bottlenecks.",
+  "Integrate physical hardware to demonstrate real-world applicability."
+],
+
+"architecture_changes": [
+  "MediaPipe Evaluation → YOLOv8 Detection",
+  "Single-Threaded Pipeline → Multi-Threaded Pipeline",
+  "Software-Only System → Hardware-Integrated System",
+  "Detection Only → Detection + Recognition + Tracking",
+  "Static Recognition → Real-Time Tracking"
+]
+
+
+},
+
+"challenges": [
+{
+"challenge": "Balancing detection accuracy and real-time performance",
+"solution": "Evaluated MediaPipe and YOLO approaches before selecting YOLOv8 due to superior real-world detection capabilities.",
+"lesson": "The fastest solution is not always the most scalable solution."
+},
+
+{
+  "challenge": "Face recognition latency",
+  "solution": "Implemented periodic identity verification instead of running recognition on every frame.",
+  "lesson": "Strategic scheduling can significantly reduce computational overhead."
+},
+
+{
+  "challenge": "Maintaining real-time FPS",
+  "solution": "Introduced multi-threading and separated recognition from tracking workloads.",
+  "lesson": "System architecture often impacts performance more than model optimization."
+},
+
+{
+  "challenge": "Converting image coordinates into physical motion",
+  "solution": "Developed pixel-to-angle conversion logic and integrated Arduino-controlled servos.",
+  "lesson": "Bridging software intelligence with hardware requires careful calibration."
+}
+
+
+],
+
+"results": {
+"current_status": "Functional prototype with real-time detection, recognition, tracking, and hardware control capabilities.",
+
+
+"completed_features": [
+  "YOLOv8-based head detection",
+  "Face recognition and identity verification",
+  "Real-time target tracking",
+  "Arduino-based pan-tilt control",
+  "Multi-threaded processing pipeline",
+  "Pixel-to-angle conversion system",
+  "Serial communication architecture",
+  "Custom dataset training"
+],
+
+"technical_outcomes": [
+  "Trained on approximately 500 manually annotated images.",
+  "Achieved real-time performance between 15 and 25 FPS.",
+  "Reduced recognition overhead using periodic verification logic.",
+  "Successfully integrated AI inference with physical hardware control."
+],
+
+"project_highlights": [
+  "Combines AI, Computer Vision, Robotics, and Embedded Systems.",
+  "Demonstrates full software-to-hardware integration.",
+  "Highest-performing project post on LinkedIn by reach and engagement.",
+  "Implemented entirely as a working prototype rather than a simulation."
+]
+
+
+},
+
+"lessons_learned": [
+"Model selection should consider future deployment environments, not just local benchmarks.",
+"Real-time systems require balancing accuracy, latency, and computational cost.",
+"Multi-threading can provide larger gains than model-level optimizations.",
+"Hardware integration introduces entirely different engineering challenges compared to software-only systems.",
+"Computer vision projects become significantly more valuable when connected to real-world actions."
+],
+
+"future_improvements": [
+"Collect larger and more diverse datasets.",
+"Expand training using drone and aerial imagery.",
+"Improve tracking stability using advanced tracking algorithms.",
+"Reduce latency through model optimization and quantization.",
+"Deploy on edge AI hardware platforms.",
+"Integrate autonomous navigation systems.",
+"Improve robustness under varying weather and lighting conditions."
+],
+
+"links": {
+"github": "",
+"demo": "",
+"linkedin_post": ""
+},
+
+"architecture_decisions": [
+{
+"decision": "Selected YOLOv8 over MediaPipe.",
+"reason": "Provided better scalability and robustness for real-world deployment scenarios."
+},
+{
+"decision": "Separated face recognition from continuous tracking.",
+"reason": "Reduced latency and improved overall FPS."
+},
+{
+"decision": "Used periodic identity verification.",
+"reason": "Face recognition was significantly slower than detection."
+},
+{
+"decision": "Integrated Arduino hardware instead of simulation-only tracking.",
+"reason": "Demonstrated end-to-end real-world applicability."
+}
+]
+}

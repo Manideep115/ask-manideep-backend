@@ -1,0 +1,12 @@
+{
+  "ai": ["machine learning", "deep learning", "genai", "llm", "rag", "nlp", "computer vision", "artificial intelligence", "neural network", "transformer"],
+  "web": ["php", "javascript", "html", "css", "mysql", "web development", "full stack", "frontend", "backend"],
+  "android": ["android", "kotlin", "java", "mobile", "mobile development", "app development"],
+  "automation": ["n8n", "workflow", "api", "orchestration", "integration"],
+  "iot": ["arduino", "sensor", "embedded", "hardware", "iot"],
+  "generative_ai": ["generative ai", "genai", "llm", "gpt", "claude", "openai", "prompt engineering", "rag"],
+  "computer_vision": ["opencv", "yolo", "yolov8", "object detection", "face recognition", "image processing"],
+  "nlp": ["natural language processing", "text classification", "sentiment analysis", "nltk", "bert"],
+  "data_science": ["pandas", "numpy", "scikit-learn", "pytorch", "tensorflow", "data analysis"],
+  "cloud": ["aws", "oracle", "oci", "cloud", "deployment", "vercel", "render"]
+}

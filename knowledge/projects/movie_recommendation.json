@@ -1,0 +1,194 @@
+{
+  "metadata": {
+    "id": "movie_recommendation",
+    "title": "Movie Recommendation App",
+    "timeline": "2023-2024",
+    "priority": 5,
+    "status": "Completed",
+    "domains": [
+      "android",
+      "mobile-development"
+    ],
+    "keywords": [
+      "android",
+      "java",
+      "tmdb api",
+      "rest api",
+      "recommendation system",
+      "mobile application",
+      "api integration"
+    ],
+    "technologies": [
+      "Java",
+      "Android Studio",
+      "TMDB API",
+      "REST APIs"
+    ]
+  },
+  
+"overview": {
+"one_line": "Built an Android application that fetches and displays movie information using the TMDB API with a clean mobile interface.",
+
+
+"summary": "Movie Recommendation App is one of my earliest Android development projects and served as my first complete mobile application. Built using Kotlin and Android XML, the application retrieves movie information from the TMDB API and displays movie posters, titles, and descriptions in a scrollable mobile interface. The project provided hands-on experience with Android development, API integration, mobile UI design, and asynchronous data handling.",
+
+"elevator_pitch": "An Android movie browsing application that integrates with the TMDB API to display movies, posters, and descriptions through a simple mobile interface."
+
+
+},
+
+"problem": {
+"statement": "Users often need a simple way to discover movies and view basic information without manually searching across multiple websites.",
+
+"why_it_matters": "Mobile applications can provide a more convenient and engaging experience for browsing entertainment content.",
+
+"target_users": [
+  "Movie enthusiasts",
+  "Android users",
+  "Students learning mobile app development"
+]
+
+
+},
+
+"motivation": {
+"why_i_built_it": "The project was developed as part of a Summer Internship Certification program conducted by Imarticus Learning. It served as the capstone project required to complete the certification and earn academic credits.",
+
+"personal_interest": "As my first major Android application, the project allowed me to learn Android development, API integration, mobile UI design, and application architecture from scratch.",
+
+"project_goals": [
+  "Learn Android development",
+  "Integrate external APIs",
+  "Build a complete mobile application",
+  "Understand mobile UI development",
+  "Gain practical software development experience"
+]
+
+
+},
+
+"architecture": {
+"v1": "The application was designed as a simple Android client that retrieves movie information from the TMDB API and displays it within a mobile interface.",
+
+"current": "The Android application sends requests to the TMDB API, retrieves movie metadata including posters and descriptions, processes the API responses, and displays the results within a scrollable user interface built using Android XML layouts. Kotlin is used for application logic, API communication, and data handling.",
+
+"future": "Future versions could introduce personalized recommendations, search functionality, watchlists, user accounts, movie ratings, and advanced filtering capabilities."
+
+
+},
+
+"implementation_journey": {
+"initial_approach": "The project started as a learning exercise during an Android development certification program and focused on understanding mobile application fundamentals.",
+
+"major_milestones": [
+  "Learned Android Studio fundamentals.",
+  "Designed Android XML user interfaces.",
+  "Integrated TMDB API.",
+  "Implemented API response handling.",
+  "Built movie listing screens.",
+  "Displayed posters and descriptions dynamically.",
+  "Packaged the application as an installable APK."
+],
+
+"key_decisions": [
+  "Use Kotlin for application logic.",
+  "Use TMDB API instead of creating a custom dataset.",
+  "Focus on learning Android development fundamentals.",
+  "Keep the application architecture simple and maintainable."
+],
+
+"architecture_changes": [
+  "Static UI Screens → API Driven Content",
+  "Learning Project → Complete Android Application"
+]
+
+
+},
+
+"challenges": [
+{
+"challenge": "Learning Android development within a short timeline.",
+"solution": "Focused on Android Studio fundamentals, layouts, activities, and API integration.",
+"lesson": "Building complete applications accelerates learning more effectively than tutorials alone."
+},
+
+
+{
+  "challenge": "Integrating external APIs.",
+  "solution": "Learned API request handling, response parsing, and dynamic content rendering.",
+  "lesson": "API integration is a core skill for modern application development."
+},
+
+{
+  "challenge": "Understanding mobile UI development.",
+  "solution": "Built layouts using Android XML and experimented with scrollable interfaces.",
+  "lesson": "User experience plays an important role in application quality."
+}
+
+
+],
+
+"results": {
+"current_status": "Completed Android application available through GitHub and APK deployment.",
+
+"completed_features": [
+  "TMDB API integration",
+  "Movie listing interface",
+  "Poster display",
+  "Movie descriptions",
+  "Scrollable content views",
+  "Android APK generation"
+],
+
+"technical_outcomes": [
+  "Successfully integrated third-party APIs.",
+  "Built a complete Android application using Kotlin.",
+  "Learned Android XML UI development.",
+  "Completed certification capstone requirements."
+],
+
+"project_highlights": [
+  "First complete Android application.",
+  "First large-scale Android Studio project.",
+  "Successful TMDB API integration.",
+  "Strong foundation for future mobile development projects."
+]
+
+
+},
+
+"lessons_learned": [
+"API integration is a fundamental software engineering skill.",
+"Building complete projects accelerates learning.",
+"Mobile UI design requires balancing simplicity and usability.",
+"Practical implementation teaches concepts faster than theoretical study.",
+"Application development involves much more than writing business logic."
+],
+
+"future_improvements": [
+"Personalized recommendations.",
+"Movie search functionality.",
+"User authentication.",
+"Watchlists and favorites.",
+"Ratings and reviews.",
+"Advanced filtering options.",
+"Offline caching support."
+],
+
+"links": {
+"github": "",
+"demo": "",
+"linkedin_post": ""
+},
+
+"architecture_decisions": [
+{
+"decision": "Used TMDB API instead of maintaining custom movie datasets.",
+"reason": "Provided reliable and constantly updated movie information."
+},
+{
+"decision": "Focused on API integration rather than recommendation algorithms.",
+"reason": "The primary goal was learning Android application development."
+}
+]
+}
