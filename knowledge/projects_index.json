@@ -2,7 +2,7 @@
   "llm_lawyer": {
     "file": "projects/llm_lawyer.json",
 
-    "priority": 10,
+    "priority": 11,
 
     "domains": [
       "Artificial Intelligence",
@@ -50,7 +50,7 @@
   "tom_resume_engine": {
     "file": "projects/tom_resume_engine.json",
 
-    "priority": 11,
+    "priority": 10,
 
     "domains": [
       "Artificial Intelligence",

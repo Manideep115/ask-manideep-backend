@@ -15,8 +15,8 @@ INTENT_PATTERNS = {
     "achievements": [r"achiev", r"award", r"recognition", r"honor", r"title", r"rank", r"won", r"win"],
     "contact": [r"contact", r"email", r"phone", r"reach", r"hire", r"connect"],
     "projects": [r"project", r"built", r"build", r"developed", r"created", r"work"],
-    "all_projects": [r"all project", r"list project", r"what project", r"projects do you"],
-    "best_projects": [r"best project", r"top \d*\s*project", r"favorite project", r"impressive", r"flagship", r"highlight", r"top projects"],
+    "all_projects": [r"all project", r"list project", r"what project", r"projects do you", r"projects have", r"projects worked on", r"project details", r"project info", r"project information",r"projects"],
+    "best_projects": [r"best project", r"top \d*\s*project", r"favorite project",r"fav project", r"impressive", r"flagship", r"highlight", r"top projects"],
 }
 
 
