@@ -5,11 +5,19 @@
 
   "current_status": "Digital Specialist Engineer at Infosys | Computer Science Undergraduate at VIT-AP University",
 
-  "university": "VIT-AP University",
+  "university": "VIT-AP University   graduation_year: 2026  cgpa: 8.56",
 
-  "graduation_year": 2026,
+"links": {
+  "linkedin": "linkedin.com/in/manideep-alur-0333b3275",
 
-  "cgpa": 8.56,
+  "github": "https://github.com/Manideep115",
+
+  "resume": "",
+
+  "instagram": "https://www.instagram.com/alurmanideep115/",
+
+  "portfolio": "https://ask-manideep-frontend.vercel.app/"
+},
 
   "summary": "currently working as a Digital Specialist Engineer at Infosys, where I am involved in developing and deploying AI-MERN stack with AI-DLC(AI driven Development Lifecycle) and AI/ML solutions. I have a strong foundation in computer science and a passion for building innovative software applications. My interests lie in the fields of Artificial Intelligence, Machine Learning, and Full Stack Development.",
 
