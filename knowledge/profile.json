@@ -3,15 +3,15 @@
 
   "headline": "Software Engineer | AI/ML Engineer | Android & Web Developer",
 
-  "current_status": "B.Tech Computer Science Engineering Student",
+  "current_status": "Digital Specialist Engineer at Infosys | Computer Science Undergraduate at VIT-AP University",
 
   "university": "VIT-AP University",
 
   "graduation_year": 2026,
 
-  "cgpa": 8.60,
+  "cgpa": 8.56,
 
-  "summary": "Computer Science undergraduate with hands-on experience building AI systems, computer vision applications, NLP pipelines, Android applications, workflow automations, and full-stack web platforms. Passionate about designing intelligent software systems that combine strong engineering fundamentals with practical real-world impact.",
+  "summary": "currently working as a Digital Specialist Engineer at Infosys, where I am involved in developing and deploying AI-MERN stack with AI-DLC(AI driven Development Lifecycle) and AI/ML solutions. I have a strong foundation in computer science and a passion for building innovative software applications. My interests lie in the fields of Artificial Intelligence, Machine Learning, and Full Stack Development.",
 
   "domains": [
     "Artificial Intelligence",
@@ -19,6 +19,9 @@
     "Natural Language Processing",
     "Computer Vision",
     "Generative AI",
+    "Full Stack Development",
+    "MERN Stack Development",
+    "AI-Driven Development Lifecycle",
     "Android Development",
     "Web Development",
     "Backend Development",
@@ -31,11 +34,12 @@
     "Android Applications",
     "Full Stack Development",
     "AI Agents",
+    "github Copilot",
     "Workflow Automation",
     "Backend Engineering",
     "Product Development",
     "Entrepreneurship"
   ],
 
-  "career_goal": "To build impactful software and AI-powered products that solve real-world problems and scale into production-grade systems."
+  "career_goal": "To build impactful software and AI-powered enterprise products that solve real-world problems and scale into production-grade systems."
 }
